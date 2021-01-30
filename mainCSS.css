@@ -1,0 +1,537 @@
+/* NOTE: ORGANIZED BY:
+        GENERAL  STYLES
+        DIVS FROM TOP TO BOTTOM
+          CODE THAT APPLIES TO DIVS(NESTED UNDER DIVS)
+        */
+
+                        /* NOTE: ||GENERAL STYLES|| */
+ html body {
+  /* most of body code is to prevent the body being smaller than the content */
+  margin: 0;
+  margin-top: 40px;
+  /* font families are from other peoples code but i may or amy not want to change them */
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  height: fit-content;
+  max-width: 100%;
+  /* background-color: black; */
+  font-family: 'Josefin Sans', sans-serif;
+  /* font-weight: 600; */
+  /* margin-top: -200px; */
+}
+.container{
+  width: 80%;
+  margin: 80px auto;
+}
+                        /* NOTE: ||LINKS|| */
+/* unvisited link */
+a:link {
+ color: black;
+}
+/* visited link */
+a:visited {
+ color: darkgrey;
+}
+/* mouse over link */
+a:hover {
+ color: grey;
+ text-decoration: none;
+}
+/* selected link */
+a:active {
+ color: black;
+ text-decoration: underline;
+}
+                        /* NOTE: ||text formatting|| */
+
+h1{
+  font-size: 175%;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+
+}
+h6{
+  font-size: 75%;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.paragraph{
+  height: 40%;
+  /*padding: 10% 30%;*/
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  /*  aligns text vertically */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+   margin-top: -100px; 
+}
+.brand{
+  margin-top: 20vh;
+}
+                        /* NOTE:  ||DIV #1: BREAKING BREAD || */
+/* breadking bread class is primarily the shape, size and color of the main div
+the welcome class is for where to place the text within that div */
+.breakingBread{
+  height: 100vh;
+  width:100%;
+  background-image: url("imgs/d.jpg");
+  background-size: contain;
+  color: white;
+  /*moves the div up to make the transition have less black space */
+  margin-top: -25vh; /*-80px*/
+  /* NOTE: negitive margins make the two divs overlap for b to w transition */
+  /* margin-top: -20px;' */
+  padding-bottom: 20px;
+  vertical-align: top;
+  text-shadow:3px 1.5px 9px rgba(0, 0, 0, 0.9);
+
+  /* padding-bottom: 20vh; */
+  /* margin-bottom:-14vh; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+/*  welcome is used in the breakdingbread div */
+.welcome{
+  height: 100vh;
+  /*  aligns the text vertically */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  /* NOTE: aligns text horizontally */
+  text-align: center;
+  margin-top: 0;
+}
+                        /* NOTE: ||DIV #2: TREAT OF THE WEEK || */
+.treatOfTheWeek{
+  height: 100vh;
+  width:100%;
+  background-image: url("imgs/almond.jpg");
+  background-size: cover;
+  /* NOTE: aligns the text vertically */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: black;
+  /* text-align: center; */
+  /* NOTE: gives the div the slanted shape */
+/*clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);  /* margin-bottom: -10em; */
+  margin-top: -5vh;
+}
+/* currently, blur is only used in treat of the week */
+.blur{
+  background: rgba(255, 255, 255, 0.4); // Make sure this color has an opacity of less than 1
+}
+
+                        /* NOTE:  ||DIV #3: ABOUT || */
+/*  ABOUT  */
+.about {
+    height: 99vh;
+    width: 100%;
+    background-image: url(imgs/family.jpg);
+    color: white;
+    /*background-size: stretch;*/
+    background-repeat: no-repeat;
+background-size: 100% 100%;
+    text-shadow: 3px 1.5px 9px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-top:90px;
+    /*margin-top: -160px;*/
+     /*margin-bottom: 16vh; */
+}
+
+                        /* NOTE:  ||DIV #4: DOTS || */
+.dots{
+  /* padding-bottom:200px; */
+  height: 91vh;
+  width: 100%;
+  /* margin-bottom: 400px; */
+}
+.w-100 {
+  width: 100% !important;
+  height: 95vh;
+}
+                        /* NOTE: ||DIV #4: FOOTER CODE || */
+/* footer div */
+.footer {
+  height: 10vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  /* margin-top:-15em; */
+  /* background-color: red; */
+}
+/* HR above what is the footer content  */
+hr {
+  color: black;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  /*add font*/
+   margin-top: 50px;
+}
+hr:after {
+    content: "Kay's Culinary Kitchen";
+    position: relative;
+    top: -0.7em;
+    font-size: 1em;
+    padding: 0 .5em;
+    background: white;
+}
+#footerContainer{
+  margin: 10px auto;
+  height: 105px;
+}
+#icons{
+  font-size: .75em;
+  position: relative;
+  top: -0.2em;
+  word-spacing: 20px;
+  color: grey;
+}
+.position{
+  /* padding-top: 150px; */
+padding-bottom: 81px;
+}
+/*
+@media screen and (max-width: 600px) {
+    .about{    background-color: red;}
+    body{background-color: green}
+} */
+
+
+
+
+/* NOTE: NEED TO DO */
+/*  add media queries for height to change  */
+/*  fix the dang footer */
+/*  add a button to go to store */
+/*  make the links at the top of the page take you to the other parts of the page */
+/*  clean up code */
+/*  add additional comments to code*/
+/*  remove non-functional code*/
+/*  resize images to be a reasonable px count */
+/*  style the bootstrap navbar */
+/*  style the bootstrap collapse on the navbar(the hamburger background turns black) */
+/*  have navbar stay visible on the entire page */
+/*  make the navbar change colors on scroll */
+
+
+div.col-7 .col-md-12{
+  padding: 0;
+}
+div.row{
+  /* margin-top: -500px; */
+}
+
+.col{
+  /* makes the snawflakes not fade into the footer */
+  background-color: white;
+}
+
+
+.sidebar {
+/* background-image: url("imgs/slicedBread.jpg"); */
+/* background-size: cover; */
+/* background-repeat: no-repeat; */
+background-attachment: fixed;
+background-color: black;
+}
+.col-sm-12{
+  padding: 0;
+}
+#brand {
+    line-height: 51px;
+    /* font-family: 'Sacramento'; */
+    letter-spacing: 11px;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    /* margin-top: 30%; */
+    /* line-height: 100px; */
+    font-family: 'Satisfy';
+    padding-bottom: 20px;
+}
+
+.intro{
+  height: 91vh; /* NOTE: awas 91 */
+  /* margin-top: -10vh; */
+  /* padding-bottom: 21vh; */
+}
+.events{
+  width: 80%;
+  margin: 1.25% 10%;
+  text-align: center;
+  padding: 1.5% 10%;
+  background: none;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 5px;
+  border: none;
+  /*  aligns text vertically */
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  /* color: rgba(0,0,0,0.6); */
+  /* NOTE: first: vertical, second: horizontal, third: opacity of blur */
+  /* text-shadow:3px 1.5px 9px rgba(0, 0, 0, 0.9); */
+}
+.events:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+   transition-duration: 500ms;
+   /* height: 30px; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.navbar-custom {
+    /* background-image: url(imgs/snow.Jpg); */
+    /* background-size: cover; */
+    background-color: black;
+    border-bottom: 1px solid white;
+
+}/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+}/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.9);
+}/* change the color of active or hovered links */
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.nav-link{
+  font-size: 18px;
+}
+
+
+
+
+
+.test{
+  height: 100vh;
+}
+.down-one{
+  font-size: 1.25em;
+  height: 100vh;
+  text-align: center;
+  /* border-style: solid; */
+  text-transform: capitalize;
+  background-color: black;
+  /* margin-top: 115px; */
+  /*  aligns text vertically */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: -15px;/*+?*/
+  color: white;
+  padding-top: 100px;
+  /* margin: 5%; */
+  /* border: 2px solid red; */
+}
+
+
+.down-two{
+  font-size: 1.25em;
+  height: 150vh;
+  text-align: center;
+  /* border-style: solid; */
+  text-transform: capitalize;
+  background-color: black;
+  padding-top: 30vh;
+  /*  aligns text vertically */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: -5vh;
+  color: white;
+}
+
+.down-three {
+    font-size: 1.25em;
+    height: 800px;
+    text-align: center;
+    /* border-style: solid; */
+    text-transform: capitalize;
+    background-color: black;
+    padding-top: 200px;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: -19vh;
+    color: white;
+    padding-top: 25vh;
+    /* padding: 5%; */
+    /* margin: 5%; */
+    /* margin-bottom: -550px; */
+    /* border: 2px solid pink; */
+}
+
+
+.fa-angle-down{
+      color: white;
+      /* font-size: 125px; */
+      /* NOTE: makes the arrow larger */
+        font-size: 125px;
+      /* NOTE: makes te arrow wider and slightly shorter in porpotion */
+          transform: scale(1,.6);
+          -webkit-text-stroke: 10px black;
+}
+/* NOTE: for the down arrow on the carousel */
+.fa-angle-down.small{
+  font-size: 25px;
+  color: white;
+  transform: scale(3.5,1);
+margin-left: -75px;
+padding-top: 15px;
+
+}
+.fa-angle-down.reg{
+  font-size: 25px;
+  color: white;
+  transform: scale(3.5,1);
+
+/* margin-left: -75px; */
+/* padding-top: 15px; */
+
+}
+
+.carousel-indicators
+{
+  padding-bottom: 15px;
+}
+.fa-angle-up{
+  color: white;
+  /* font-size: 125px; */
+  /* NOTE: makes the arrow larger */
+    font-size: 125px;
+  /* NOTE: makes te arrow wider and slightly shorter in porpotion */
+      transform: scale(1,.6);
+      -webkit-text-stroke: 10px black;
+}
+
+.carousel-caption{
+  /* NOTE: first: vertical, second: horizontal, third: opacity of blur */
+  text-shadow:3px 1.5px 9px rgba(0, 0, 0, 0.9);
+}
+.navbar-brand{
+  margin-right: 2rem;
+  margin-left:.5rem;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: 'Satisfy';
+}
+
+#silver{
+
+  width:800px;
+  height: 800px;
+  margin-top: -450px;
+  margin-bottom: -495px;
+  /* margin-left: -50px; */
+}
+#silver2{
+
+  width:800px;
+  height: 800px;
+  margin-top: -250px;
+  margin-bottom: -600px;
+  /* margin-left: -50px; */
+}
+
+.fa-chevron-down{
+/* NOTE: makes the arrow larger */
+  font-size: 125px;
+/* NOTE: makes te arrow wider and slightly shorter in porpotion */
+    transform: scale(4,.6);
+    /* NOTE: padding to center */
+  padding-left: 17%;
+  /* padding-right: 18%; */
+
+  /* NOTE: makes the border 2px wide and white */
+  -webkit-text-stroke: 2px white;
+  /* NOTE: makes the arrow itself transparent */
+  color: transparent !important;
+  /* border: 5px solid white; */
+  /* border-radius: 50%; */
+}
+.lounge{
+  font-size: 125px;
+transform: scale(4,.6);
+padding-left: 17%;
+/* padding-right: 18%; */
+/* -webkit-text-stroke: 2px black; */
+color: white !important;
+/* border: 5px solid white; */
+/* border-radius: 50%;*/
+text-shadow: none;
+
+}
+
+.lounge:hover{
+  text-shadow:3px 1.5px 9px rgba(0, 0, 0, 0.9);
+
+
+}
+#arrow{
+  color: white;
+  transform: scale(1.5,1);
+}
+
+.padd{
+      /* margin-bottom: 200px; */
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .intro {
+      /* background-color: blue; */
+      height: 91vh;
+    }
+    .dots{
+      display: none;
+    }
+    .treatOfTheWeek{
+      /*margin-bottom: 50px;*/
+      /*border-bottom: 20px solid black;*/
+
+    }
+    .about{
+      height: 100vh;
+      margin-top: 100vh;
+    }
+    .breakingBread{
+      height: 100vh;
+      margin-top:-200vh;
+      background-image: none;
+      padding-top: 25vh;
+      /*background-color: black;*/
+      /*color: white;*/
+    }
+  }
+
