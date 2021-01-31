@@ -508,7 +508,7 @@ text-shadow: none;
   }
 
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 425px) {
     .intro {
       /* background-color: blue; */
       height: 91vh;
