@@ -68,6 +68,7 @@ h6{
   align-content: center;
   flex-direction: column;
   margin-top: -100px;
+  margin-bottom: 25vh;
 }
 }
 .brand{
@@ -526,12 +527,12 @@ text-shadow: none;
 
     }
     .about{
-      height: 60vh;
-      margin-top: 60vh;
+      height: 75vh;
+      margin-top: 75vh;
     }
     .breakingBread{
       height: 75vh;
-      margin-top:-135vh;
+      margin-top:-150vh;
       background-image: none;
       padding-top: 25vh;
       /*background-color: black;*/
