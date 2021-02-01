@@ -67,9 +67,7 @@ h6{
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  margin-top: -100px;
-  margin-bottom: 25vh;
-}
+   margin-top: -100px;
 }
 .brand{
   margin-top: 20vh;
