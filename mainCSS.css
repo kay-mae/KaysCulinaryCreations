@@ -67,7 +67,7 @@ h6{
   justify-content: center;
   align-content: center;
   flex-direction: column;
-   margin-top: -100px; 
+   margin-top: -100px;
 }
 .brand{
   margin-top: 20vh;
@@ -256,7 +256,7 @@ background-color: black;
     line-height: 51px;
     /* font-family: 'Sacramento'; */
     letter-spacing: 11px;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 400;
     color: white;
     text-align: center;
@@ -299,6 +299,7 @@ background-color: black;
 
 html {
   scroll-behavior: smooth;
+  /* position: inherit; */
 }
 
 
@@ -442,7 +443,7 @@ padding-top: 15px;
   margin-right: 2rem;
   margin-left:.5rem;
   letter-spacing: 2px;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 400;
   font-family: 'Satisfy';
 }
@@ -508,10 +509,11 @@ text-shadow: none;
   }
 
 
-   @media (min-width: 768px)   {
+  @media (max-width: 767px)  {
+
     .intro {
       /* background-color: blue; */
-      height: 91vh;
+      height: 75vh;
     }
     .dots{
       display: none;
@@ -519,18 +521,59 @@ text-shadow: none;
     .treatOfTheWeek{
       /*margin-bottom: 50px;*/
       /*border-bottom: 20px solid black;*/
+      height: 75vh;
 
     }
     .about{
-      height: 100vh;
-      margin-top: 100vh;
+      height: 75vh;
+      margin-top: 75vh;
     }
     .breakingBread{
-      height: 100vh;
-      margin-top:-200vh;
+      height: 75vh;
+      margin-top:-150vh;
       background-image: none;
       padding-top: 25vh;
       /*background-color: black;*/
       /*color: white;*/
     }
+    .down-one{
+      display: none;
+      }
+  .down-two{
+         display: none;
+       }
+  .down-three{
+         display: none;
+       }
+  h1{
+    font-size: 2.75em;
   }
+  p{
+    font-size: 1.25em;
+      margin-top:10vh
+      padding-bottom: 5vh;
+  }
+  h5{
+    font-size: 1.25em;
+  }
+  button{
+    font-size: 1.25em;
+  }
+  #brand{
+    font-size: 2.75em;
+  }
+  .blur{
+height:auto;
+margin-top: 30px;}
+  }
+
+
+
+/* NOTE:
+ iphone 5
+ ipad
+ ipad pro
+ galaxy fold;
+
+
+*/
